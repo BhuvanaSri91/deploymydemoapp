@@ -1,0 +1,13 @@
+<div class="login-main">
+    <div>
+        <h1>Login</h1>
+        <input type="text" placeholder="Username">
+    </div>
+    <div>
+        <input type="password" placeholder="Password" [(ngModel)]="user_password">
+    </div>
+    <div>
+        <p>{{user_password}}</p>
+    </div>
+    <button routerLink="/">Submit</button>
+</div>

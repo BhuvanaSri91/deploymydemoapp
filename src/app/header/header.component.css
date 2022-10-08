@@ -1,0 +1,25 @@
+.header-main {
+    display: flex;
+    padding: 10px 0 0 10px;
+}
+.login-icon {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 8px;
+    right: -963px;
+}
+.login-container {
+    position: relative;
+    right: 10px;
+}
+.login-inside-container {
+    background: white;
+    padding: 10px;
+    box-shadow: 0 0 8px #cccccc;
+    border-radius: 10px;
+    width: 100px;
+    position: absolute;
+    right: -975px;
+    top: 70px;
+}

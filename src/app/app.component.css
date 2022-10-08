@@ -1,0 +1,23 @@
+.footer {
+    position: fixed;
+    bottom: 0px;
+    background: black;
+    color: white;
+    width: 100%;
+}
+.sidenav{
+    width: 20%;
+    float: left;
+    background: turquoise;
+    height: 800px;
+}
+.main-content {
+    width: 80%;
+    float: left;
+}
+.header{
+    background: bisque;
+}
+h1{
+    margin: 0px;
+}

@@ -1,0 +1,42 @@
+<div class="col-12 float-start">
+    <div class="col-6 mb-5 float-start">
+        <form #localReference = "ngForm" (ngSubmit)="onSubmission(localReference)">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" ngModel name="fullname" required #fullname="ngModel">
+                <div *ngIf="fullname.invalid && fullname.touched" id="emailHelp" class="form-text">Name cannot be empty.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" ngModel name="email" required #email="ngModel">
+                <div *ngIf="email.invalid && email.touched" id="emailHelp" class="form-text">Email id should be in correct format.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Previously studied course</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" ngModel name="previous course">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Marks scored in Class 12</label>
+                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" ngModel name="12th marks">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Marks scored in Class 10</label>
+                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" ngModel name="10th marks">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Dob</label>
+                <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" ngModel name="dob">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Mobile No.</label>
+                <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" ngModel name="mobile num">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" ngModel name="checkbox">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary mb-5">Submit</button>
+            <button type="reset" class="btn btn-primary mb-5">Reset</button>
+        </form>
+    </div>
+</div>

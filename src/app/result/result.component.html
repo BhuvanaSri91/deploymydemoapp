@@ -1,0 +1,22 @@
+<div class="results-main">
+    <table class="width100">
+        <tr>
+            <th>Sl.no.</th>
+            <th>Student Name</th>
+            <th>Branch</th>
+            <th>Course</th>
+            <th>Year</th>
+            <th>Result in Percentage</th>
+            <th>Scholorship Provided</th>
+        </tr>
+        <tr *ngFor = "let item of results; let i = index">
+            <td>{{item.Slno}}</td>
+            <td>{{item.Name | titlecase}}</td>
+            <td>{{item.Branch | uppercase}}</td>
+            <td>{{item.Course | uppercase}}</td>
+            <td>{{item.Year}}</td>
+            <td>{{item.Result}}</td>
+            <td>{{item.Scholorship | currency:'INR'}}</td>
+        </tr>
+    </table>
+</div>

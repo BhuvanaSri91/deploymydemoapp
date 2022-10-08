@@ -1,0 +1,11 @@
+<div class="header-main" style="border: 1px solid black;">
+    <img [src] = "path" [width]="width_size" [height]="height_size">
+    <h2>{{reference.title}}</h2>
+    <div class="login-container">
+        <img (click)="toggleLogin()" [src]="login_icon_path" class="login-icon">
+        <div *ngIf="showLoginContainer" class="login-inside-container">
+            <div routerLink="/login">Staff Login</div>
+            <div>Student Login</div>
+        </div>
+    </div>
+</div>

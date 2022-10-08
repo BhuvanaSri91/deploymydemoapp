@@ -1,0 +1,14 @@
+<div class="courses-main">
+    <table class="width100">
+        <tr>
+            <th>Sl.no.</th>
+            <th>Course Name</th>
+            <th>No.of intake available</th>
+        </tr>
+        <tr *ngFor = "let i of courses">
+            <td>{{i.Slno}}</td>
+            <td>{{i.Course}}</td>
+            <td>{{i.Intake}}</td>
+        </tr>
+    </table>
+</div>
